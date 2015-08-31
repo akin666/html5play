@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dist/css/normalize.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/app.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/audio.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/audio/instance.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/audio/jukebox.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/audio/system.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/base64.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/common.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/network.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/system.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/system/instance.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/system/log.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/system/math.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/jslibs/system/music.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/vendor/common.js" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,26 @@
+
+var box2d = {
+   Vec2 : Box2D.Common.Math.b2Vec2,
+   BodyDef : Box2D.Dynamics.b2BodyDef,
+   Body : Box2D.Dynamics.b2Body,
+   FixtureDef : Box2D.Dynamics.b2FixtureDef,
+   Fixture : Box2D.Dynamics.b2Fixture,
+   World : Box2D.Dynamics.b2World,
+   WorldManifold : Box2D.Collision.b2WorldManifold,
+   MassData : Box2D.Collision.Shapes.b2MassData,
+   PolygonShape : Box2D.Collision.Shapes.b2PolygonShape,
+   CircleShape : Box2D.Collision.Shapes.b2CircleShape,
+   EdgeShape : Box2D.Collision.Shapes.b2EdgeShape,
+//   ChainShape : Box2D.Collision.Shapes.b2ChainShape,
+   DebugDraw : Box2D.Dynamics.b2DebugDraw,
+   ContactListener : Box2D.Dynamics.b2ContactListener,
+   DestructionListener : Box2D.Dynamics.b2DestructionListener,
+   RevoluteJointDef : Box2D.Dynamics.Joints.b2RevoluteJointDef,
+   DistanceJointDef : Box2D.Dynamics.Joints.b2DistanceJointDef,
+   PrismaticJointDef : Box2D.Dynamics.Joints.b2PrismaticJointDef,
+   PulleyJointDef : Box2D.Dynamics.Joints.b2PulleyJointDef,
+   GearJointDef : Box2D.Dynamics.Joints.b2GearJointDef,
+   MouseJointDef : Box2D.Dynamics.Joints.b2MouseJoint,
+   WeldJointDef : Box2D.Dynamics.Joints.b2WeldJointDef,
+   FrictionJointDef : Box2D.Dynamics.Joints.b2FrictionJoint
+};
