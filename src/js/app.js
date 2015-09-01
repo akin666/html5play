@@ -12,12 +12,13 @@ require(["network"], function(network) {
 });
 
 require(["jquery"], function($) {
+    // For each application div, create application, and store the application data into the element itself.
     $("[application]").each(function(index){
         var element = $(this);
         require(["application/" + element.attr("application").toLowerCase()], function(Application){
-            new Application({
+            element.data("application", new Application({
                 element: element
-            });
+            }));
         });
     });
 });

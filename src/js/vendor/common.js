@@ -43,6 +43,9 @@ window.noop = function () {};
         }
     }
 }
+// define requestAnimationFrame
+window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+
 function Point( x , y )
 {
     this.x = x;
