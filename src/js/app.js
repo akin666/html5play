@@ -75,8 +75,7 @@ require(["jquery", "tween"] , function($, TWEEN) {
     }
 
     function update() {
-        target.style.webkitTransform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
-        target.style.MozTransform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
+        target.style.transform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
     }
 });
 
