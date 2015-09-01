@@ -49,18 +49,18 @@ require(["jquery", "tween"] , function($, TWEEN) {
     animate();
 
     function init() {
-        position = {x: 100, y: 100, rotation: 0};
+        position = {rotation: -20};
         target = $("#box")[0];
 
         tween = new TWEEN.Tween(position)
-            .to({x: 300, y: 300, rotation: 90}, 4000)
+            .to({rotation: 20}, 2000)
             .delay(100)
-            .easing(TWEEN.Easing.Bounce.InOut)
+            .easing(TWEEN.Easing.Elastic.InOut)
             .onUpdate(update);
 
         tweenBack = new TWEEN.Tween(position)
-            .to({x: 100, y: 100, rotation: 0}, 4000)
-            .easing(TWEEN.Easing.Bounce.InOut)
+            .to({rotation: -20}, 2000)
+            .easing(TWEEN.Easing.Elastic.InOut)
             .onUpdate(update);
 
         tween.chain(tweenBack);
@@ -75,8 +75,6 @@ require(["jquery", "tween"] , function($, TWEEN) {
     }
 
     function update() {
-        target.style.left = position.x + 'px';
-        target.style.top = position.y + 'px';
         target.style.webkitTransform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
         target.style.MozTransform = 'rotate(' + Math.floor(position.rotation) + 'deg)';
     }
