@@ -11,6 +11,17 @@ require(["network"], function(network) {
     */
 });
 
+require(["jquery"], function($) {
+    $("[application]").each(function(index){
+        var element = $(this);
+        require(["application/" + element.attr("application").toLowerCase()], function(Application){
+            new Application({
+                element: element
+            });
+        });
+    });
+});
+
 require(["howler" , "system"], function(howler , System){
     /*
     var sound = new howler.Howl({
@@ -41,7 +52,7 @@ require(["jquery", "tween"] , function($, TWEEN) {
         target = $("#box")[0];
 
         tween = new TWEEN.Tween(position)
-            .to({x: 700, y: 700, rotation: 359}, 2000)
+            .to({x: 300, y: 300, rotation: 359}, 2000)
             .delay(100)
             .easing(TWEEN.Easing.Elastic.Out)
             .onUpdate(update);
@@ -76,6 +87,7 @@ require(["jquery", "three" , "tween" , "system"] , function($, THREE, Tween, Sys
     var camera, scene, renderer;
 
     var uniforms;
+    return;
 
     init();
     animate();
