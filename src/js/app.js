@@ -53,14 +53,14 @@ require(["jquery", "tween"] , function($, TWEEN) {
         target = $("#box")[0];
 
         tween = new TWEEN.Tween(position)
-            .to({x: 300, y: 300, rotation: 359}, 2000)
+            .to({x: 300, y: 300, rotation: 90}, 4000)
             .delay(100)
-            .easing(TWEEN.Easing.Elastic.Out)
+            .easing(TWEEN.Easing.Bounce.InOut)
             .onUpdate(update);
 
         tweenBack = new TWEEN.Tween(position)
-            .to({x: 100, y: 100, rotation: 0}, 3000)
-            .easing(TWEEN.Easing.Elastic.Out)
+            .to({x: 100, y: 100, rotation: 0}, 4000)
+            .easing(TWEEN.Easing.Bounce.InOut)
             .onUpdate(update);
 
         tween.chain(tweenBack);
