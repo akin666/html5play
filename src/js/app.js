@@ -1,14 +1,14 @@
 
 require(["network"], function(network) {
     /*
-    network.get({
-        server: "http://www.google.fi"
-    }).then(function (data) {
-        alert("success");
-    }, function(data){
-        alert("fail");
-    });
-    */
+     network.get({
+     server: "http://www.google.fi"
+     }).then(function (data) {
+     alert("success");
+     }, function(data){
+     alert("fail");
+     });
+     */
 });
 
 require(["jquery"], function($) {
@@ -25,12 +25,12 @@ require(["jquery"], function($) {
 
 require(["howler" , "system"], function(howler , System){
     /*
-    var sound = new howler.Howl({
-        src: ['24_victorious.mp3']
-    });
+     var sound = new howler.Howl({
+     src: ['24_victorious.mp3']
+     });
 
-    sound.play();
-    */
+     sound.play();
+     */
 
     var music = new System.Music("abba");
 
