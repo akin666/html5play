@@ -28,13 +28,22 @@
                 "paths": {
                     "app": "../app",
                     "jquery": "../vendor/jquery-2.1.4.min",
+                    "jquery-mobile": "../vendor/jquery.mobile.custom.min",
                     "howler": "../vendor/howler.min",
                     "three": "../vendor/three.min",
                     "tween": "../vendor/tween",
                     "common": "../vendor/common"
                 },
+                priority: ['jquery', 'jquery-mobile'],
                 shim: {
-                    three: {
+                    'jquery': {
+                        deps: []
+                    },
+                    'jquery-mobile': {
+                        deps: ['jquery'],
+                        exports: 'jquery'
+                    },
+                    'three': {
                         exports: 'THREE'
                     }
                 }

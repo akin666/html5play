@@ -50,8 +50,13 @@ require(["jquery", "tween"] , function($, TWEEN) {
 
     function init() {
         position = {rotation: -20};
-        target = $("#box")[0];
+        var element = $("#box");
 
+        if(element.length < 1) {
+            return;
+        }
+
+        target = element[0];
         tween = new TWEEN.Tween(position)
             .to({rotation: 20}, 2000)
             .delay(100)
