@@ -35,7 +35,7 @@ require(["howler" , "system"], function(howler , System){
     var music = new System.Music("abba");
 
     System.Log({
-        message: "Instance ID " + music.getID() + " for " + music.getFile()
+        message: "Instance ID " + music.id + " for " + music.file
     });
 });
 
