@@ -1,0 +1,32 @@
+{
+    "//": "This file contains only data for the project, for datadriven architecture.",
+    "items": [{
+            "type": "panel",
+            "id": "gg",
+            "name": "foo",
+            "shape": {
+                "type": "rectangle",
+                "width": 200,
+                "height": 100,
+                "unit": "px"
+            },
+            "material" : {
+                "fill": {
+                    "type": "color",
+                    "red": 0.0,
+                    "green": 1.0,
+                    "blue": 1.0,
+                },
+            },
+            "layer": "gui",
+            "position": {
+                "type": "position",
+                "x": 100.0,
+                "y": 100.0,
+                "z": 0.0
+            },
+            "opacity": 1.0,
+            "enabled": true
+        }
+    ]
+}
