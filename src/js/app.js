@@ -1,5 +1,5 @@
 
-require(["../test"], function(Test) {});
+require(["test"], function(Test) {});
 
 require(["network"], function(network) {
     /*
