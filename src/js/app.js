@@ -1,4 +1,6 @@
 
+require(["../test"], function(Test) {});
+
 require(["network"], function(network) {
     /*
      network.get({

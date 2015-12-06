@@ -10,6 +10,7 @@
         <!-- Place favicon.ico in the root directory -->
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
+        <link rel="stylesheet" href="js/vendor/qunit.css">
         <script data-main="js/app" src="js/vendor/require.js"></script>
     </head>
     <body>
@@ -30,6 +31,9 @@
 
         <div id="box" style="position: fixed; left: 100px; top: 400px;" application="youtube" data-src="https://www.youtube.com/embed/PxRvDRav1BA?autoplay=1" data-width="200" data-height="200"></div>
 -->
+
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
         <script>
             requirejs.config({
                 "baseUrl": "js/jslibs",
@@ -37,6 +41,7 @@
                     "app": "../app",
                     "jquery": "../vendor/jquery-2.1.4.min",
                     "jquery-mobile": "../vendor/jquery.mobile.custom.min",
+                    "qunit": "../vendor/qunit",
                     "howler": "../vendor/howler.min",
                     "three": "../vendor/three.min",
                     "tween": "../vendor/tween",
@@ -51,6 +56,13 @@
                     'jquery-mobile': {
                         deps: ['jquery'],
                         exports: 'jquery'
+                    },
+                    'qunit': {
+                        exports: 'qunit',
+                        init: function () {
+                            qunit.config.autoload = false;
+                            qunit.config.autostart = false;
+                        }
                     },
                     'three': {
                         exports: 'THREE'
